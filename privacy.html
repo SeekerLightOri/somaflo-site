@@ -1,39 +1,49 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-lang="ru" data-title-ru="SomaFlo — Политика конфиденциальности" data-title-en="SomaFlo — Privacy Policy">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SomaFlo — Privacy Policy</title>
   <meta name="description" content="Политика конфиденциальности приложения SomaFlo / SomaFlo Privacy Policy">
+  <meta name="theme-color" content="#0f141e">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <script src="lang.js" defer></script>
 </head>
 <body>
-<main>
-  <header>
-    <div class="brand"><a href="./" style="text-decoration:none">SomaFlo</a></div>
-    <nav>
-      <a href="#ru">Русский</a>
-      <a href="#en">English</a>
-    </nav>
-  </header>
 
-  <section id="ru">
-    <h1>Политика конфиденциальности</h1>
-    <p>Действует с 16 ноября 2026 года.</p>
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="./"><img src="icon.svg" alt=""><span>Soma<b>Flo</b></span></a>
+    <nav class="topnav">
+      <a class="hide-sm" href="./"><span data-l="ru">Главная</span><span data-l="en">Home</span></a>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-set="ru">RU</button>
+        <button type="button" data-set="en">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="doc" data-l="ru" id="ru">
+    <div class="head"><img src="icon.svg" alt=""><h1>Политика конфиденциальности</h1></div>
+    <p class="date">Действует с 16 ноября 2026 года.</p>
+    <article>
 
     <p>Здесь описано, какие данные собирает приложение SomaFlo для Android, зачем и где они хранятся. Владелец и оператор данных — разработчик приложения SomaFlo. По любым вопросам о данных пишите на <a href="mailto:seekerlight.work@gmail.com">seekerlight.work@gmail.com</a>.</p>
 
-    <h2>1. Без аккаунта</h2>
+    <h2><span class="n">1</span>Без аккаунта</h2>
     <p>Приложением можно пользоваться без регистрации. Тогда всё, что вы вводите (питание, тренировки, вес, замеры, сон, вода, менструальный цикл, настроение), хранится только на вашем телефоне в зашифрованной базе данных (SQLCipher, ключ в Android Keystore) и никуда не отправляется. Исключение — функции ИИ (раздел 5), которые работают только по вашему действию.</p>
 
-    <h2>2. Аккаунт</h2>
+    <h2><span class="n">2</span>Аккаунт</h2>
     <ul>
       <li><b>Регистрация по почте:</b> адрес почты и пароль. Пароль хранится только в виде хеша. На почту приходят коды подтверждения и сброса пароля.</li>
       <li><b>Вход через Google:</b> мы получаем от Google ваше имя, адрес почты и ссылку на фото профиля, чтобы создать аккаунт. Доступа к другим данным Google-аккаунта у приложения нет.</li>
       <li>С аккаунтом ваши записи синхронизируются с облаком, чтобы не потеряться и перенестись на новый телефон. Данные о здоровье, включая цикл и настроение, лежат в личной части аккаунта: доступ к ним есть только у вас.</li>
     </ul>
 
-    <h2>3. Соцсеть</h2>
+    <h2><span class="n">3</span>Соцсеть</h2>
     <ul>
       <li>Карточка профиля: имя, фото, код приглашения. Найти вас по имени можно, только если вы сами откроете карточку для поиска.</li>
       <li>Посты, фото, комментарии, реакции и список друзей видны другим людям в зависимости от выбранной видимости поста (по умолчанию — только друзьям).</li>
@@ -41,16 +51,16 @@
       <li>Вы можете заблокировать человека: он перестанет видеть вас, а вы — его.</li>
     </ul>
 
-    <h2>4. Push-уведомления</h2>
+    <h2><span class="n">4</span>Push-уведомления</h2>
     <p>Если вы вошли в аккаунт и разрешили уведомления, телефон получает токен Firebase Cloud Messaging, который хранится на нашем сервере. Через Firebase (Google) приходят уведомления о лайках, комментариях и заявках в друзья: в них есть имя отправителя и начало комментария. Токен удаляется при выходе из аккаунта.</p>
 
-    <h2>5. Функции ИИ</h2>
+    <h2><span class="n">5</span>Функции ИИ</h2>
     <p>Ассистент, распознавание блюд по фото, разбор записи еды и генерация фото рецепта работают через Google Gemini API на нашем сервере. Передаётся только то, что нужно для запроса: ваше сообщение, фото блюда, текст записи или название рецепта. Снимок данных дня (профиль, питание, тренировки, сон) уходит ассистенту только после вашего явного согласия, а цикл и настроение — только при отдельном согласии. Согласия можно отозвать в профиле. Имя, почта и токены ИИ не передаются. Google не использует эти запросы для обучения своих продуктов.</p>
 
-    <h2>6. Health Connect</h2>
+    <h2><span class="n">6</span>Health Connect</h2>
     <p>С вашего разрешения приложение читает из Health Connect шаги, сон и пульс, чтобы показать их в дневнике. Эти данные не продаются, не используются для рекламы и передаются только в ваш аккаунт и (при согласии) ИИ-ассистенту.</p>
 
-    <h2>7. Кто обрабатывает данные</h2>
+    <h2><span class="n">7</span>Кто обрабатывает данные</h2>
     <ul>
       <li><b>Supabase</b> — хранение аккаунта и данных, серверы в ЕС (Ирландия).</li>
       <li><b>Google</b> — вход через Google, Firebase Cloud Messaging, Gemini API.</li>
@@ -58,43 +68,44 @@
     </ul>
     <p>Мы не продаём данные, не показываем рекламу, не подключаем аналитику и трекеры и не запрашиваем рекламный идентификатор.</p>
 
-    <h2>8. Хранение и удаление</h2>
+    <h2><span class="n">8</span>Хранение и удаление</h2>
     <ul>
       <li>Данные хранятся, пока существует аккаунт. Удалённые записи окончательно стираются с сервера через 30 дней.</li>
       <li>Чтобы удалить аккаунт и все данные, напишите на <a href="mailto:seekerlight.work@gmail.com">seekerlight.work@gmail.com</a> с адреса аккаунта. Мы удалим всё в течение 30 дней.</li>
       <li>Копию своих данных можно в любой момент сохранить в файл из приложения.</li>
     </ul>
 
-    <h2>9. Ваши права</h2>
+    <h2><span class="n">9</span>Ваши права</h2>
     <p>Вы можете узнать, какие данные о вас хранятся, исправить их, получить копию, удалить их и отозвать согласия. Если считаете, что ваши права нарушены, вы можете обратиться в надзорный орган по защите данных своей страны.</p>
 
-    <h2>10. Дети</h2>
+    <h2><span class="n">10</span>Дети</h2>
     <p>Приложение не предназначено для детей младше 16 лет.</p>
 
-    <h2>11. Данные из Google API</h2>
+    <h2><span class="n">11</span>Данные из Google API</h2>
     <p>Использование и передача приложением SomaFlo информации, полученной от Google API, соответствует <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, включая требования Limited Use.</p>
 
-    <h2>12. Изменения</h2>
+    <h2><span class="n">12</span>Изменения</h2>
     <p>При изменении политики мы обновим эту страницу и дату вверху.</p>
-  </section>
-
-  <section id="en">
-    <h1>Privacy Policy</h1>
-    <p>Effective November 16, 2026.</p>
+    </article>
+  </div>
+  <div class="doc" data-l="en" id="en">
+    <div class="head"><img src="icon.svg" alt=""><h1>Privacy Policy</h1></div>
+    <p class="date">Effective November 16, 2026.</p>
+    <article>
 
     <p>This policy explains what data the SomaFlo Android app collects, why, and where it is stored. The data controller is the developer of SomaFlo. For any question about your data, write to <a href="mailto:seekerlight.work@gmail.com">seekerlight.work@gmail.com</a>.</p>
 
-    <h2>1. Without an account</h2>
+    <h2><span class="n">1</span>Without an account</h2>
     <p>You can use the app without signing up. Everything you enter (food, workouts, weight, measurements, sleep, water, menstrual cycle, mood) then stays on your phone in an encrypted database (SQLCipher, key in Android Keystore) and is not sent anywhere. The exception is AI features (section 5), which run only when you use them.</p>
 
-    <h2>2. Account</h2>
+    <h2><span class="n">2</span>Account</h2>
     <ul>
       <li><b>Email sign-up:</b> your email address and password. The password is stored only as a hash. Confirmation and password reset codes are sent to your email.</li>
       <li><b>Sign in with Google:</b> we receive your name, email address and profile photo link from Google to create the account. The app has no access to other data in your Google account.</li>
       <li>With an account your records are synced to the cloud so they are not lost and move to a new phone. Health data, including cycle and mood, is kept in the private part of your account: only you can access it.</li>
     </ul>
 
-    <h2>3. Social network</h2>
+    <h2><span class="n">3</span>Social network</h2>
     <ul>
       <li>Profile card: name, photo, invite code. People can find you by name only if you make your card searchable.</li>
       <li>Posts, photos, comments, reactions and your friends list are visible to others according to the post visibility you choose (friends only by default).</li>
@@ -102,16 +113,16 @@
       <li>You can block a person: they stop seeing you, and you stop seeing them.</li>
     </ul>
 
-    <h2>4. Push notifications</h2>
+    <h2><span class="n">4</span>Push notifications</h2>
     <p>If you are signed in and allow notifications, the phone receives a Firebase Cloud Messaging token, which is stored on our server. Notifications about likes, comments and friend requests are delivered through Firebase (Google); they contain the sender's name and the start of the comment. The token is removed when you sign out.</p>
 
-    <h2>5. AI features</h2>
+    <h2><span class="n">5</span>AI features</h2>
     <p>The assistant, meal photo recognition, food entry parsing and recipe photo generation use the Google Gemini API through our server. Only what the request needs is sent: your message, the meal photo, the entry text or the recipe name. A snapshot of your day (profile, food, workouts, sleep) is sent to the assistant only after your explicit consent; cycle and mood only with a separate consent. You can withdraw consent in your profile. Your name, email and tokens are never sent to the AI. Google does not use these requests to improve its products.</p>
 
-    <h2>6. Health Connect</h2>
+    <h2><span class="n">6</span>Health Connect</h2>
     <p>With your permission the app reads steps, sleep and heart rate from Health Connect to show them in your diary. This data is not sold, not used for advertising, and is shared only with your account and (with consent) the AI assistant.</p>
 
-    <h2>7. Service providers</h2>
+    <h2><span class="n">7</span>Service providers</h2>
     <ul>
       <li><b>Supabase</b> — account and data storage, servers in the EU (Ireland).</li>
       <li><b>Google</b> — Sign in with Google, Firebase Cloud Messaging, Gemini API.</li>
@@ -119,27 +130,34 @@
     </ul>
     <p>We do not sell data, show ads, use analytics or trackers, or request the advertising ID.</p>
 
-    <h2>8. Retention and deletion</h2>
+    <h2><span class="n">8</span>Retention and deletion</h2>
     <ul>
       <li>Data is kept while the account exists. Deleted records are permanently erased from the server after 30 days.</li>
       <li>To delete your account and all data, email <a href="mailto:seekerlight.work@gmail.com">seekerlight.work@gmail.com</a> from your account address. We delete everything within 30 days.</li>
       <li>You can save a copy of your data to a file from the app at any time.</li>
     </ul>
 
-    <h2>9. Your rights</h2>
+    <h2><span class="n">9</span>Your rights</h2>
     <p>You can find out what data we hold about you, correct it, get a copy, delete it and withdraw consents. If you believe your rights have been violated, you may contact the data protection authority of your country.</p>
 
-    <h2>10. Children</h2>
+    <h2><span class="n">10</span>Children</h2>
     <p>The app is not intended for children under 16.</p>
 
-    <h2>11. Google API data</h2>
+    <h2><span class="n">11</span>Google API data</h2>
     <p>SomaFlo's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
-    <h2>12. Changes</h2>
+    <h2><span class="n">12</span>Changes</h2>
     <p>If this policy changes, we will update this page and the date at the top.</p>
-  </section>
-
-  <footer>SomaFlo · <a href="mailto:seekerlight.work@gmail.com">seekerlight.work@gmail.com</a></footer>
+    </article>
+  </div>
 </main>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="logo" href="./"><img src="icon.svg" alt=""><span>Soma<b>Flo</b></span></a>
+    <span>© 2026 SomaFlo · <a href="mailto:seekerlight.work@gmail.com">seekerlight.work@gmail.com</a></span>
+  </div>
+</footer>
+
 </body>
 </html>

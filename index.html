@@ -1,54 +1,168 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-lang="ru" data-title-ru="SomaFlo — питание, тренировки и самочувствие" data-title-en="SomaFlo — nutrition, training and well-being">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SomaFlo</title>
-  <meta name="description" content="SomaFlo — питание, тренировки, сон и самочувствие в одном приложении.">
+  <title>SomaFlo — питание, тренировки и самочувствие</title>
+  <meta name="description" content="SomaFlo — питание, тренировки, сон и самочувствие в одном приложении. Nutrition, workouts, sleep and well-being in one app.">
+  <meta name="theme-color" content="#0f141e">
+  <meta property="og:title" content="SomaFlo">
+  <meta property="og:description" content="Питание, тренировки, сон и самочувствие в одном приложении.">
+  <meta property="og:image" content="icon.svg">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <script src="lang.js" defer></script>
 </head>
 <body>
-<main>
-  <header>
-    <div class="brand">SomaFlo</div>
-    <nav>
-      <a href="#ru">Русский</a>
-      <a href="#en">English</a>
-      <a href="privacy.html">Политика конфиденциальности / Privacy Policy</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="./"><img src="icon.svg" alt=""><span>Soma<b>Flo</b></span></a>
+    <nav class="topnav">
+      <a class="hide-sm" href="#features"><span data-l="ru">Возможности</span><span data-l="en">Features</span></a>
+      <a class="hide-sm" href="privacy.html"><span data-l="ru">Приватность</span><span data-l="en">Privacy</span></a>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-set="ru">RU</button>
+        <button type="button" data-set="en">EN</button>
+      </div>
     </nav>
-  </header>
+  </div>
+</header>
 
-  <section id="ru">
-    <h1>SomaFlo</h1>
-    <p>Приложение для Android, которое собирает в одном месте питание, тренировки, сон, воду, вес и самочувствие.</p>
-    <ul>
-      <li>Дневник питания с подсчётом калорий и БЖУ, распознавание блюд по фото.</li>
-      <li>Тренировки, программы и расчёт рабочих весов.</li>
-      <li>Сон, шаги и пульс из Health Connect, трекер воды, веса и замеров.</li>
-      <li>ИИ-тренер, который видит ваши данные только с вашего согласия.</li>
-      <li>Соцсеть: лента, друзья, лайки и комментарии.</li>
-      <li>Работает без аккаунта; с аккаунтом данные сохраняются в облаке и переносятся на новый телефон.</li>
-    </ul>
-    <p>Без рекламы, без трекеров и аналитики.</p>
-    <p>Связь: <a href="mailto:seekerlight.work@gmail.com">seekerlight.work@gmail.com</a></p>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow"><span data-l="ru">Приложение для Android</span><span data-l="en">Android app</span></span>
+        <h1>
+          <span data-l="ru">Тело в&nbsp;<span class="accent">потоке</span></span>
+          <span data-l="en">Your body, in&nbsp;<span class="accent">flow</span></span>
+        </h1>
+        <p class="lead">
+          <span data-l="ru">Питание, тренировки, сон, вода, вес и самочувствие — в одном спокойном приложении. Видите картину целиком и понимаете, что работает именно для вас.</span>
+          <span data-l="en">Nutrition, workouts, sleep, water, weight and well-being in one calm app. See the whole picture and learn what works for you.</span>
+        </p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#features"><span data-l="ru">Что умеет SomaFlo</span><span data-l="en">What SomaFlo does</span></a>
+          <a class="btn btn-ghost" href="privacy.html"><span data-l="ru">Политика конфиденциальности</span><span data-l="en">Privacy Policy</span></a>
+        </div>
+        <div class="badges">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-l="ru">Без рекламы</span><span data-l="en">No ads</span></span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-l="ru">Без трекеров</span><span data-l="en">No trackers</span></span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span data-l="ru">Работает без аккаунта</span><span data-l="en">Works without an account</span></span>
+        </div>
+      </div>
+
+      <div class="stage" aria-hidden="true">
+        <img class="mark" src="logo.svg" alt="">
+        <div class="phone">
+          <div class="screen">
+            <div class="row"><span><span data-l="ru">Сегодня</span><span data-l="en">Today</span><br><b><span data-l="ru">Привет!</span><span data-l="en">Hi there!</span></b></span><img src="icon.svg" alt="" width="34" height="34" style="border-radius:10px"></div>
+            <div class="card ring-wrap">
+              <svg class="ring" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" fill="none" stroke="#252d3a" stroke-width="9"/>
+                <circle cx="50" cy="50" r="42" fill="none" stroke="#5ed5a8" stroke-width="9" stroke-linecap="round" stroke-dasharray="264" stroke-dashoffset="84" transform="rotate(-90 50 50)"/>
+                <text x="50" y="52" text-anchor="middle">1 240</text>
+                <text class="sub" x="50" y="66" text-anchor="middle">/ 1 850</text>
+              </svg>
+              <div class="macros">
+                <div><span data-l="ru">Белки</span><span data-l="en">Protein</span><div class="bar"><i style="width:72%;background:#c89ae5"></i></div></div>
+                <div><span data-l="ru">Жиры</span><span data-l="en">Fat</span><div class="bar"><i style="width:55%;background:#f8c172"></i></div></div>
+                <div><span data-l="ru">Углеводы</span><span data-l="en">Carbs</span><div class="bar"><i style="width:63%;background:#5ec1f1"></i></div></div>
+              </div>
+            </div>
+            <div class="tiles">
+              <div class="tile"><div class="dot" style="background:rgba(165,220,117,.16);color:#a5dc75"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="13" cy="4" r="2"/><path d="m8 21 3-7 3 3v4M7 12l3-4 4 1 3 3"/></svg></div><span data-l="ru">Шаги</span><span data-l="en">Steps</span><b>7 842</b></div>
+              <div class="tile"><div class="dot" style="background:rgba(97,166,253,.16);color:#61a6fd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11Z"/></svg></div><span data-l="ru">Вода</span><span data-l="en">Water</span><b>1 500 <span data-l="ru">мл</span><span data-l="en">ml</span></b></div>
+              <div class="tile"><div class="dot" style="background:rgba(164,143,244,.16);color:#a48ff4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg></div><span data-l="ru">Сон</span><span data-l="en">Sleep</span><b><span data-l="ru">7ч 40м</span><span data-l="en">7h 40m</span></b></div>
+              <div class="tile"><div class="dot" style="background:rgba(255,169,125,.16);color:#ffa97d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M12 3c1 4 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5.5 2 1.5 3 3 3-1-3 0-6.5 0-8.5Z"/></svg></div><span data-l="ru">Активность</span><span data-l="en">Activity</span><b>320 <span data-l="ru">ккал</span><span data-l="en">kcal</span></b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="en">
-    <h1>SomaFlo</h1>
-    <p>An Android app that brings nutrition, workouts, sleep, water, weight and well-being together.</p>
-    <ul>
-      <li>Food diary with calories and macros, meal recognition from photos.</li>
-      <li>Workouts, programs and working-weight calculations.</li>
-      <li>Sleep, steps and heart rate from Health Connect; water, weight and body measurements.</li>
-      <li>An AI coach that sees your data only with your consent.</li>
-      <li>Social network: feed, friends, likes and comments.</li>
-      <li>Works without an account; with an account your data is kept in the cloud and moves to a new phone.</li>
-    </ul>
-    <p>No ads, no trackers, no analytics.</p>
-    <p>Contact: <a href="mailto:seekerlight.work@gmail.com">seekerlight.work@gmail.com</a></p>
+  <section class="block" id="features">
+    <div class="wrap">
+      <h2><span data-l="ru">Всё о самочувствии — в одном месте</span><span data-l="en">Everything about how you feel, in one place</span></h2>
+      <p class="intro"><span data-l="ru">Не нужно держать пять приложений. SomaFlo связывает еду, движение и восстановление и показывает, как одно влияет на другое.</span><span data-l="en">No need for five different apps. SomaFlo connects food, movement and recovery and shows how each affects the others.</span></p>
+
+      <div class="features">
+        <div class="feature" style="--c: var(--primary)">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3v7a3 3 0 0 0 6 0V3M7 3v18M17 21V3c-2.5 1-4 3.5-4 7v3h4"/></svg></div>
+          <h3><span data-l="ru">Дневник питания</span><span data-l="en">Food diary</span></h3>
+          <p><span data-l="ru">Калории и БЖУ, личный бюджет калорий под вашу цель и распознавание блюд по фото.</span><span data-l="en">Calories and macros, a personal calorie budget for your goal, and meal recognition from photos.</span></p>
+        </div>
+        <div class="feature" style="--c: var(--flame)">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7v10M18 7v10M3 10v4M21 10v4M6 12h12"/></svg></div>
+          <h3><span data-l="ru">Тренировки</span><span data-l="en">Workouts</span></h3>
+          <p><span data-l="ru">Программы, журнал подходов, расчёт рабочих весов и карта нагрузки мышц.</span><span data-l="en">Programs, set logging, working-weight calculations and a muscle load map.</span></p>
+        </div>
+        <div class="feature" style="--c: var(--sleep)">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg></div>
+          <h3><span data-l="ru">Сон, шаги и пульс</span><span data-l="en">Sleep, steps and heart rate</span></h3>
+          <p><span data-l="ru">Данные из Health Connect подтягиваются сами, а вода, вес и замеры — в пару касаний.</span><span data-l="en">Data from Health Connect arrives on its own; water, weight and measurements take a couple of taps.</span></p>
+        </div>
+        <div class="feature" style="--c: var(--carbs)">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4L12 3ZM18 15l.9 2.1L21 18l-2.1.9L18 21l-.9-2.1L15 18l2.1-.9L18 15Z"/></svg></div>
+          <h3><span data-l="ru">ИИ-тренер</span><span data-l="en">AI coach</span></h3>
+          <p><span data-l="ru">Отвечает на вопросы о питании и тренировках. Ваши данные видит только с вашего согласия.</span><span data-l="en">Answers questions about food and training. Sees your data only with your consent.</span></p>
+        </div>
+        <div class="feature" style="--c: var(--cycle)">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0M16 5a3 3 0 0 1 0 6M21 20a6 6 0 0 0-4-5.6"/></svg></div>
+          <h3><span data-l="ru">Друзья и лента</span><span data-l="en">Friends and feed</span></h3>
+          <p><span data-l="ru">Делитесь успехами, ставьте лайки и комментируйте. Посты по умолчанию видят только друзья.</span><span data-l="en">Share progress, like and comment. Posts are visible to friends only by default.</span></p>
+        </div>
+        <div class="feature" style="--c: var(--water)">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 0 1-.5-9A6 6 0 0 1 18 8a4 4 0 0 1-.5 10H7Z"/><path d="m9.5 13 2 2 3.5-3.5"/></svg></div>
+          <h3><span data-l="ru">Бэкап в облако</span><span data-l="en">Cloud backup</span></h3>
+          <p><span data-l="ru">Работает без аккаунта. С аккаунтом данные сохраняются в облаке и переезжают на новый телефон.</span><span data-l="en">Works without an account. With one, your data is kept in the cloud and moves to a new phone.</span></p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer><a href="privacy.html">Политика конфиденциальности / Privacy Policy</a></footer>
+  <section class="block">
+    <div class="wrap">
+      <div class="privacy-band">
+        <img class="bg-mark" src="logo.svg" alt="">
+        <h2><span data-l="ru">Ваши данные — ваши</span><span data-l="en">Your data stays yours</span></h2>
+        <p class="intro"><span data-l="ru">Здоровье — личное. Поэтому SomaFlo устроен так, чтобы лишнее никуда не уходило.</span><span data-l="en">Health is personal. SomaFlo is built so nothing leaves your phone without a reason.</span></p>
+        <div class="points">
+          <div class="point">
+            <h3><span data-l="ru">Шифрование на телефоне</span><span data-l="en">Encrypted on device</span></h3>
+            <p><span data-l="ru">Записи хранятся в зашифрованной базе, ключ — в защищённом хранилище Android.</span><span data-l="en">Records live in an encrypted database with the key in Android's secure storage.</span></p>
+          </div>
+          <div class="point">
+            <h3><span data-l="ru">ИИ только с согласия</span><span data-l="en">AI only with consent</span></h3>
+            <p><span data-l="ru">Цикл и настроение уходят ассистенту только при отдельном согласии. Его можно отозвать.</span><span data-l="en">Cycle and mood reach the assistant only with a separate consent you can withdraw.</span></p>
+          </div>
+          <div class="point">
+            <h3><span data-l="ru">Без рекламы и слежки</span><span data-l="en">No ads, no tracking</span></h3>
+            <p><span data-l="ru">Мы не продаём данные, не показываем рекламу и не подключаем аналитику.</span><span data-l="en">We don't sell data, show ads or use analytics.</span></p>
+          </div>
+        </div>
+        <a class="btn" href="privacy.html"><span data-l="ru">Читать политику конфиденциальности</span><span data-l="en">Read the Privacy Policy</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block contact">
+    <div class="wrap">
+      <h2><span data-l="ru">Есть вопрос или идея?</span><span data-l="en">A question or an idea?</span></h2>
+      <p class="intro"><span data-l="ru">Пишите — отвечаем лично.</span><span data-l="en">Write to us — we answer personally.</span></p>
+      <a class="btn btn-primary" href="mailto:seekerlight.work@gmail.com">seekerlight.work@gmail.com</a>
+    </div>
+  </section>
 </main>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="logo" href="./"><img src="icon.svg" alt=""><span>Soma<b>Flo</b></span></a>
+    <span>© 2026 SomaFlo · <a href="privacy.html"><span data-l="ru">Политика конфиденциальности</span><span data-l="en">Privacy Policy</span></a></span>
+  </div>
+</footer>
+
 </body>
 </html>
