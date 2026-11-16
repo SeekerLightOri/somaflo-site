@@ -213,7 +213,7 @@ footer.site .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items:
 footer.site a { color: var(--text-2); }
 
 /* Privacy policy page */
-.doc { max-width: 780px; margin: 0 auto; padding: 48px 16px 72px; }
+.doc { max-width: 780px; margin: 0 auto; padding: 48px 16px 72px; scroll-margin-top: 64px; }
 .doc .head { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
 .doc .head img { width: 56px; height: 56px; border-radius: 16px; box-shadow: 0 10px 30px var(--glow); }
 .doc h1 { font-size: clamp(30px, 5vw, 42px); letter-spacing: -0.03em; line-height: 1.1; margin: 0; }
